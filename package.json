@@ -10,6 +10,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf ./dist ./node_modules package-lock.json && npm install",
     "dev" : "node  --loader ts-node/esm  ./src/converter.ts"
   },
   "author": "Paul Kirkaas",
