@@ -1,0 +1,45 @@
+{
+  "extends": "pk-ts-node-lib/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "paths": {
+      "@libs/*": [
+        "src/libs/*"
+      ],
+      "@models/*": [
+        "src/models/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "*": [
+        "src/custom_types/*"
+      ],
+    },
+    "lib": [
+      "ES2021.String"
+    ]
+  },
+  "include": [
+    "./src/**/*",
+  ],
+  "ts-node": {
+    "require": [
+      "tsconfig-paths/register"
+    ],
+    "esm": true
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "dist/**/*",
+    "*.d.ts"
+  ],
+  "typeRoots": [
+    "node_modules/@types",
+    "src/custom_types/"
+  ]
+}

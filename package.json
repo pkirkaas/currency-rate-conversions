@@ -1,0 +1,20 @@
+{
+  "name": "currency-rate-conversions",
+  "version": "1.0.0",
+  "description": "Take a salary for a currency, period and amount, & convert to equivalent for hour, day, weeek, month, year, in USD, GBP, EUR and DKK",
+  "main": "dist/index.js",
+  "module":"./dist/index.js",
+  "engines": {
+    "node": ">= 16.0.0"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "node  --loader ts-node/esm  ./src/converter.ts"
+  },
+  "author": "Paul Kirkaas",
+  "license": "ISC",
+  "dependencies": {
+    "pk-ts-node-lib": "git+https://github.com/pkirkaas/pk-ts-node-lib.git#working"
+    }
+}
